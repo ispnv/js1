@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var a = 1, b = 1, c, d;
+	c = ++a; alert(c);           // 2 - оператор инкремента, c присвоено значение на 1 больше чем a
+
+	d = b++; alert(d);           // 1 - оператор инкремента стоит после переменной, которой присваивается значение, поэтому b=d
+
+	c = (2+ ++a); alert(c);      // 5 - 2 складывается с новой переопределенной переменной а, которая теперь имеет значение 3 (в первом пункте она стала равна 2, теперь 3 с помощью инкремента)
+
+	d = (2+ b++); alert(d);      // 4 - 2 складывается с переопределенной переменной b, которая имеет значение 2 (во втором пункте оператор инкремента стоял после переменной, но в каждой новой операции он учитывается)
+
+	alert(a);                    // 3 - вывод переменной а, которая приняла значение 3
+
+	alert(b);                    // 3 - вывод переменной b, которая еще увеличилась из-за инкремента после переменной
+
+	var a = 2;
+	var x = 1 + (a *= 2); // х = 5
+
+	var a = parseInt(prompt("Введите любое число"));
+	var b = parseInt(prompt("Введите любое число"));
+	if (a >= 0 && b >= 0) {
+		alert(a - b);
+	} else if (a < 0 && b <0) {
+		alert(a * b);
+	} else {
+		alert(a+b);
+	}
+
+	var y = +prompt("Введите число от 0 до 15");
+	switch(y) {
+		case 0:
+			alert ( '0');
+			
+		case 1:
+			alert ( '1');
+			
+		case 2:
+			alert ( '2');
+			
+		case 3:
+			alert ( '3');
+			
+		case 4:
+			alert ( '4');
+			
+		case 5:
+			alert ( '5');
+			
+		case 6:
+			alert ( '6');
+			
+		case 7:
+			alert ( '7');
+			
+		case 8:
+			alert ( '8');
+			
+		case 9:
+			alert ( '9');
+			
+		case 10:
+			alert ( '10');
+			
+		case 11:
+			alert ( '11');
+			
+		case 12:
+			alert ( '12');
+			
+		case 13:
+			alert ( '13');
+			
+		case 14:
+			alert ( '14');
+			
+		case 15:
+			alert ( '15');				
+		}
+
+	var a = 4;
+	var b = 2;
+
+		function sum(a, b) {
+    		return a + b;
+		}
+
+		function minus(a, b) {   //не уверена что minus
+    		return a - b;
+		}
+
+		function div(a, b) {
+    		return a / b;
+		}
+
+		function mult(a, b) {
+    		return a * b;
+		}	
+
+		function mathOperation(a, b, operation) {
+    			switch(operation) {
+       				 case 'sum':
+           				 return a + b;
+           				 break;
+       				 case 'minus':
+           				 return a - b;
+            			 break;
+        			 case 'div':
+                      	 return a / b;
+            			 break;
+       				 case 'mult':
+           				 return a * b;
+            			 break;
+   				}
+   		}
+
+	</script>
+	
+</body>
+</html>
