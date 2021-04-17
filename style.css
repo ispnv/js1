@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "Montserrat";
+}
+
+.div_item {
+	margin: 30px 0 0 15px;
+	display: flex;
+    flex-direction: column;
+}
+
+.item_img {
+	width: 200px;
+	height: 200px;
+}
+
+.item_btn {
+	border-style: 0.5px solid black;
+	width: 60px;
+	height: 20px;
+}

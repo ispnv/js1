@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 1 задание 
+		var a = {
+			number: +prompt("Введите число от 0 до 999"),
+			hundreds: 0,
+			dozens: 0,
+			units: 0,
+		};
+			if (a.number < 0 || a.number > 999 || isNaN(a)) {
+				console.log("Вы ввели неправильное число"); 
+			} else {
+                   a.hundreds = Math.floor(a.number / 100 % 10);
+                   a.dozens = Math.floor(a.number / 10 % 10);
+                   a.units = Math.floor(a.number % 10);
+                console.log(a);
+            };
+
+         // 2 задание игра в отдельном файле
+         
+	</script>	
+	
+</body>
+</html>
